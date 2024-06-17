@@ -200,7 +200,7 @@ const EditorHTML: React.FC = () => {
 
       <div>
         <EmailEditor
-          editorId="editor_container"
+          editorId="editor"
           ref={emailEditorRef}
           minHeight={1000}
           options={{
