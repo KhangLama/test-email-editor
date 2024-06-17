@@ -211,7 +211,7 @@ const EditorHTML: React.FC = () => {
             appearance: {
               theme: 'modern_light',
             },
-            projectId: 237985,
+            projectId: 237998,
             tools: {
               "custom#product_tool": {
                 enabled: true,
