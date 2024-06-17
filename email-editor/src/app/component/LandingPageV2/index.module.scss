@@ -1,0 +1,985 @@
+@media (min-width: 1024px) {
+    .Muicontainer {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
+
+.Muicontainer {
+    max-width: 1218px;
+    padding: 0px;
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    .fVegNo{
+        display: flex;
+        flex-direction: column;
+        -webkit-box-align: center;
+        align-items: center;
+        position: relative;
+        .container{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            box-sizing: border-box;
+            .directionColumn{
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                box-sizing: border-box;
+                .xs{
+                    flex-grow: 0;
+                    max-width: 100%;
+                    flex-basis: 100%; 
+                    flex-direction: column; 
+                    margin: 0;
+                    box-sizing: border-box;
+                    width: 100%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    .breadcrumbs{
+                        color: rgb(84, 87, 255);
+                        margin-bottom: 12px;
+                        height: 20px;
+                    }
+
+                    .items{
+                        margin-bottom: 24px;
+                        min-height: 44px;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        width: 100%;
+                        display: flex;
+                        flex-wrap: wrap;
+                        box-sizing: border-box;
+
+                        .title{
+                            margin: 0;
+                            box-sizing: border-box;
+                            .titleHeader{
+                                font-size: 28px;
+                                font-family: "Nunito";
+                                line-height: 40px;
+                                color: rgb(50, 50, 92);
+                                white-space: nowrap;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                            }
+                        }
+                        @media (min-width: 1024px) {
+                            .title {
+                                flex-grow: 0;
+                                max-width: 66.666667%;
+                                flex-basis: 66.666667%;
+                            }
+                        }
+
+                        .button{
+                            margin-top: 0px;
+                            height: 0;
+                            .popoverWrapper{
+                                max-width: 100%;
+                                .customWrapperPopover{
+                                    display: inline-flex;
+                                    .MuiButtonBase{
+                                        background: rgb(45, 47, 122);
+                                        box-shadow: none;
+                                        min-width: 63px;
+                                        color: rgb(255, 255, 255);
+                                        padding: 12px;
+                                        position: relative;
+                                        font-size: 14px;
+                                        box-sizing: border-box;
+                                        font-family: "Mulish";
+                                        line-height: 20px;
+                                        text-transform: none;
+                                        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+                                        font-weight: 500;
+                                        white-space: nowrap;
+                                        border-radius: 4px;
+                                        letter-spacing: 0px;
+                                        border: 0;
+                                        cursor: pointer;
+                                        margin: 0;
+                                        display: inline-flex;
+                                        outline: 0;
+                                        align-items: center;
+                                        user-select: none;
+                                        vertical-align: middle;
+                                        justify-content: center;
+                                        text-decoration: none;
+                                        -webkit-tap-highlight-color: transparent;
+                                        .label{
+                                            width: 100%;
+                                            display: inherit;
+                                            align-items: inherit;
+                                            justify-content: inherit;
+                                            .kkAHba{
+                                                display: inline-flex;
+                                                opacity: 1;
+                                            }
+                                            .iconSizeMedium{
+                                                margin-left: 0px;
+                                                display: inherit;
+                                                margin-right: -4px;
+                                                .iconWrapperArrowDropDown{
+                                                    font-size: 20px;
+                                                    display: flex;
+                                                    -webkit-box-pack: center;
+                                                    justify-content: center;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .selectEditorSimplePopover{
+                                    position: relative;
+                                    z-index: 1301;
+                                    max-width: calc(100%);
+                                    will-change: transform;
+                                    top: 0px;
+                                    left: 0px;
+                                    .MuiPaper{
+                                        border: 1px solid rgb(226, 232, 240);
+                                        padding: 8px 0px;
+                                        box-shadow: rgba(45, 55, 72, 0.16) 0px 3px 6px;
+                                        margin-top: 8px;
+                                        overflow: hidden auto;
+                                        margin-bottom: 8px;
+                                        border-radius: 4px;
+                                        color: rgba(0, 0, 0, 0.87);
+                                        transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+                                        background-color: #fff;
+                                        .DragDropEditor, .RawHTML{
+                                            max-width: 100%;
+                                            padding: 12px 16px 16px;
+                                            color: rgb(74, 85, 104);
+                                            font-family: "Mulish";
+                                            font-size: 14px;
+                                            font-weight: 400;
+                                            text-align: left;
+                                            line-height: 20px;
+                                            cursor: pointer;
+                                        }
+                                    }
+                                }
+                            }
+                            }
+                            
+                                                        .simplePopover{
+                                                            z-index: 1301;
+                                                            max-width: calc(100% - 32px);
+                                                            position: absolute;
+                                                            will-change: transform;
+                                                            top: 0px;
+                                                            left: 0px;
+                                                            transform: translate3d(633px, 325px, 0px);
+                                                            .MuiPaper{
+                                                                border: 1px solid rgb(226, 232, 240);
+                                                                padding: 8px 0px;
+                                                                box-shadow: rgba(45, 55, 72, 0.16) 0px 3px 6px;
+                                                                margin-top: 8px;
+                                                                overflow: hidden auto;
+                                                                margin-bottom: 8px;
+                                                                border-radius: 4px;
+                                                                color: rgba(0, 0, 0, 0.87);
+                                                                transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+                                                                background-color: #fff;
+                                                                .menuItem{
+                                                                    max-width: 100%;
+                                                                    padding: 12px 16px 16px;
+                                                                    color: rgb(74, 85, 104);
+                                                                    font-family: "Mulish";
+                                                                    font-size: 14px;
+                                                                    font-weight: 400;
+                                                                    text-align: left;
+                                                                    line-height: 20px;
+                                                                    cursor: pointer; 
+                                                                    &:hover {
+                                                                        background: rgb(243, 245, 255);
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                    }
+                }
+
+                .containerXs{
+                    width: 100%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    box-sizing: border-box;
+                }
+
+                .MuiGridDirectionXsColumn{
+                    flex-direction: column;
+                    width: 100%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    box-sizing: border-box;
+                    .tabsWrapper{
+                        border: none;
+                        overflow: hidden;
+                        border-radius: 4px 4px 0px 0px;
+                        justify-content: space-between;
+                        width: 100%;
+                        display: flex;
+                        flex-wrap: wrap;
+                        box-sizing: border-box;
+                        .eem2387{
+                            flex-grow: 100;
+                            display: flex;
+                            overflow: hidden;
+                            min-height: 48px;
+                            .MuiTabs{
+                                overflow: hidden; 
+                                width: 100%;
+                                flex: 1 1 auto;
+                                display: inline-block;
+                                position: relative;
+                                white-space: nowrap;
+                                .tablist{
+                                    display: flex;
+                                    .MuiButtonBase{
+                                        margin-left: 0px;
+                                        opacity: 1;
+                                        padding: 16px 8px;
+                                        min-width: 64px;
+                                        border-radius: 4px;
+                                        text-transform: none;
+                                        color: inherit;
+                                        overflow: hidden;
+                                        position: relative;
+                                        font-size: 0.75rem;
+                                        max-width: 264px;
+                                        box-sizing: border-box;
+                                        min-height: 48px;
+                                        text-align: center;
+                                        flex-shrink: 0;
+                                        font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+                                        font-weight: 500;
+                                        line-height: 1.75;
+                                        white-space: normal;
+                                        letter-spacing: 0.02857em;
+                                        border: 0;
+                                        cursor: pointer;
+                                        margin: 0;
+                                        display: inline-flex;
+                                        outline: 0;
+                                        align-items: center;
+                                        user-select: none;
+                                        vertical-align: middle;
+                                        -moz-appearance: none;
+                                        justify-content: center;
+                                        text-decoration: none;
+                                        background-color: transparent;
+                                        -webkit-appearance: none;
+                                        -webkit-tap-highlight-color: transparent;
+                                        .eem1243{
+                                            color: #32325C;
+                                            font-size: 16px;
+                                            font-family: "Nunito";
+                                            font-weight: 600;
+                                            width: 100%;
+                                            display: inline-flex;
+                                            align-items: center;
+                                            flex-direction: column;
+                                            justify-content: center;
+                                            .titlle{
+                                                display: inline-flex;
+                                            }
+                                        }
+                                        .MuiTouchRipple{
+                                            color: #BABCFF;
+                                            top: 0;
+                                            left: 0;
+                                            right: 0;
+                                            bottom: 0;
+                                            z-index: 0;
+                                            overflow: hidden;
+                                            position: absolute;
+                                            border-radius: inherit;
+                                            pointer-events: none;
+                                        }
+                                    }
+
+                                    .indicator{
+                                        left: 0px;
+                                        width: 119.688px;
+                                        background-color: #5457FF;
+                                        bottom: 0;
+                                        height: 2px;
+                                        position: absolute;
+                                        transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+                                    }
+                                }                        
+                            }
+                        }
+                    }
+                }
+
+                .styledPaper{
+                    box-shadow: 0 0 1px 0 rgba(45, 55, 72, 0.1);
+                    width: 100%;
+                    border: 1px solid rgb(226, 232, 240);
+                    border-radius: 4px;
+                    background: rgb(255, 255, 255);
+                    margin-top: 32px;
+                    .paperContainer{
+                        width: 100%;
+                        display: flex;
+                        flex-wrap: wrap;
+                        box-sizing: border-box;
+                        .itemPaper{
+                            flex-grow: 0;
+                            max-width: 100%;
+                            flex-basis: 100%;
+                            margin: 0;
+                            box-sizing: border-box;
+
+                            .hZDngK{
+                                padding: 24px 48px 0px;
+                                .adornedStart{
+                                    border: solid 1px #A0AEC0;
+                                    padding: 11px 40px 11px 12px;
+                                    min-height: 44px;
+                                    border-radius: 4px;
+                                    background-color: #fff;
+                                    width: 100%;
+                                    color: rgba(0, 0, 0, 0.87);
+                                    cursor: text;
+                                    display: inline-flex;
+                                    position: relative;
+                                    font-size: 14px;
+                                    box-sizing: border-box;
+                                    align-items: center;
+                                    font-family: "Mulish";
+                                    font-weight: 400;
+                                    line-height: 1.1876em;
+                                    letter-spacing: normal; 
+                                    .searchIcon{
+                                        fill: #718096;
+                                        width: 20px;
+                                        height: 20px;
+                                        margin-right: 8px;
+                                    }
+                                    #searchTemplates{
+                                        color: #4A5568;
+                                        padding: 0;
+                                        font-size: 14px;
+                                        min-width: 72px;
+                                        font-family: "Mulish";
+                                        line-height: 20px;
+                                        font: inherit;
+                                        width: 100%;
+                                        border: 0;
+                                        height: 1.1876em;
+                                        margin: 0;
+                                        display: block;
+                                        background: none;
+                                        box-sizing: content-box;
+                                        animation-name: "mui-auto-fill-cancel";
+                                        letter-spacing: inherit;
+                                        animation-duration: 10ms;
+                                        -webkit-tap-highlight-color: transparent;
+                                        &:focus{
+                                            border: none;
+                                            outline: 0;
+                                            padding: 0;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .itemeem1230{
+                            padding-bottom: 4px;
+                            flex-grow: 0;
+                            max-width: 100%;
+                            flex-basis: 100%;
+                            margin: 0;
+                            box-sizing: border-box;
+                            .MuiPaperElevation{
+                                box-shadow: none;
+                                border-radius: 4px;
+                                color: rgba(0, 0, 0, 0.87);
+                                transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+                                background-color: #fff;
+                                .simpleTable{
+                                    margin-bottom: 12px;
+                                    width: 100%;
+                                    table-layout: fixed;
+                                    border-collapse: separate;
+                                    display: table;
+                                    border-spacing: 0;
+                                    .MuiTableHead{
+                                        border-collapse: separate;
+                                        display: table-header-group;
+                                        .MuiTableRowHead{
+                                            height: 52px;
+                                            color: inherit;
+                                            border: 1px solid transparent;
+                                            display: table-row;
+                                            outline: 0;
+                                            vertical-align: middle;
+                                            .MuiTableCellPaddingNone{
+                                                border-top: none;
+                                                width: 40px;
+                                                padding: 8px;
+                                                color: #A0AEC0;
+                                                border: none;
+                                                font-size: 12px;
+                                                font-family: "Nunito";
+                                                font-weight: 600;
+                                                line-height: 16px;
+                                                min-width: 48px;
+                                                display: table-cell;
+                                                letter-spacing: 0.01071em;
+                                                vertical-align: inherit;
+                                            }
+
+                                            .MuiTableCell{
+                                                border-top: none;
+                                                border-bottom: none;
+                                                padding: 8px;
+                                                color: #A0AEC0;
+                                                border: none;
+                                                font-size: 12px;
+                                                font-family: "Nunito";
+                                                font-weight: 600;
+                                                line-height: 16px;
+                                                text-align: left;
+                                                display: table-cell;
+                                                letter-spacing: 0.01071em;
+                                                vertical-align: inherit;
+                                                .MuiTableSortLabel{
+                                                    height: max-content;
+                                                    color: #A0AEC0;
+                                                    cursor: default;
+                                                    display: inline-flex;
+                                                    align-items: center;
+                                                    flex-direction: inherit;
+                                                    justify-content: flex-start;
+                                                    border: 0;
+                                                    margin: 0;
+                                                    outline: 0;
+                                                    padding: 0;
+                                                    position: relative;
+                                                    user-select: none;
+                                                    border-radius: 0;
+                                                    vertical-align: middle;
+                                                    text-decoration: none;
+                                                    background-color: transparent;
+                                                    -webkit-appearance: none;
+                                                    -webkit-tap-highlight-color: transparent;
+                                                    .eem1220{
+                                                        .eem1219{
+                                                            display: inline-flex;
+                                                            margin-bottom: -20px;
+                                                            .textSecondary{
+                                                                margin: 12px 24px 15px 0;
+                                                                color: #5457FF;
+                                                                border: none;
+                                                                padding: 0;
+                                                                font-size: 14px;
+                                                                min-width: unset;
+                                                                background: transparent;
+                                                                box-shadow: none;
+                                                                box-sizing: border-box;
+                                                                font-family: "Mulish";
+                                                                line-height: 20px;
+                                                                text-transform: none;
+                                                                transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+                                                                font-weight: 500;
+                                                                white-space: nowrap;
+                                                                border-radius: 4px;
+                                                                letter-spacing: 0px;
+                                                                cursor: pointer;
+                                                                display: inline-flex;
+                                                                outline: 0;
+                                                                position: relative;
+                                                                align-items: center;
+                                                                user-select: none;
+                                                                vertical-align: middle;
+                                                                -moz-appearance: none;
+                                                                justify-content: center;
+                                                                text-decoration: none;
+                                                                -webkit-appearance: none;
+                                                                -webkit-tap-highlight-color: transparent;
+                                                                .MuiButtonLabel{
+                                                                    width: 100%;
+                                                                    display: inherit;
+                                                                    align-items: inherit;
+                                                                    justify-content: inherit;
+                                                                    .iconSizeMedium{
+                                                                        display: inherit;
+                                                                        margin-left: -4px;
+                                                                        margin-right: 8px;
+                                                                        .iconML{
+                                                                            font-size: 20px;
+                                                                            fill: currentColor;
+                                                                            width: 1em;
+                                                                            height: 1em;
+                                                                            display: inline-block;
+                                                                            transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+                                                                            flex-shrink: 0;
+                                                                            user-select: none;
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+
+                                                            span {
+                                                                .popoverWrapper{
+                                                                    max-width: 100%;
+                                                                    .buttonWrapperPopover{
+                                                                        display: inline-flex;
+                                                                        height: 44px;
+                                                                        max-width: 100%;
+                                                                        .templateTypePopoverButton{
+                                                                            color: rgb(74, 85, 104);
+                                                                            font-size: 14px;
+                                                                            transition: none 0s ease 0s;
+                                                                            font-family: "Mulish";
+                                                                            line-height: 20px;
+                                                                            border-radius: 4px;
+                                                                            text-transform: none;
+                                                                            justify-content: space-between;
+                                                                            border: 0px solid transparent !important;
+                                                                            margin: 15px 0px;
+                                                                            min-width: 64px;
+                                                                            box-sizing: border-box;
+                                                                            white-space: nowrap;
+                                                                            letter-spacing: 0px;
+                                                                            cursor: pointer;
+                                                                            display: inline-flex;
+                                                                            outline: 0;
+                                                                            position: relative;
+                                                                            align-items: center;
+                                                                            user-select: none;
+                                                                            vertical-align: middle;
+                                                                            -webkit-appearance: none;
+                                                                            -webkit-tap-highlight-color: transparent;
+                                                                            .active {
+                                                                                box-shadow: none;
+                                                                            }
+                                                                            &:hover {
+                                                                                max-width: 100%;
+                                                                                background: transparent;
+                                                                                text-decoration: none;
+                                                                            }
+                                                                            &:hover, &:focus {
+                                                                                padding: 7px 12px 7px 0px;
+                                                                            }
+                                                                            .eem1271{
+                                                                                display: inline-block;
+                                                                                overflow: hidden;
+                                                                                position: relative;
+                                                                                max-width: 100%;
+                                                                                text-align: left;
+                                                                                white-space: nowrap;
+                                                                                padding-right: 35px;
+                                                                                text-overflow: ellipsis;
+                                                                                width: 100%;
+                                                                                .iconSizeMedium{
+                                                                                    background: #fff;
+                                                                                    fill: rgb(84, 87, 255);
+                                                                                    margin-left: 8px;
+                                                                                    margin-right: 7px;
+                                                                                    top: 0;
+                                                                                    right: 0;
+                                                                                    position: absolute;
+                                                                                    display: inherit;
+                                                                                    .iconWrapperCaretDownMaterial{
+                                                                                        font-size: 20px;
+                                                                                        display: flex;
+                                                                                        -webkit-box-pack: center;
+                                                                                        justify-content: center;
+                                                                                        color: #5457FF;
+                                                                                    }
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                    .MuiTableBody{
+                                        display: table-row-group;
+                                        .MuiTableRow{
+                                            color: inherit;
+                                            border: 1px solid transparent;
+                                            display: table-row;
+                                            outline: 0;
+                                            vertical-align: middle;
+                                            .paddingNone{
+                                                border-bottom: none;
+                                                width: 40px;
+                                                padding: 8px;
+                                                min-width: 48px;
+                                                color: rgba(0, 0, 0, 0.87);
+                                                display: table-cell;
+                                                font-size: 14px;
+                                                text-align: left;
+                                                font-family: "Nunito";
+                                                font-weight: 700;
+                                                line-height: 1;
+                                                letter-spacing: 0.01071em;
+                                                vertical-align: inherit;
+                                            }
+                                            .alignLeft{
+                                                border-top: none;
+                                                border-bottom: none;
+                                                padding: 8px;
+                                                text-align: left;
+                                                color: rgba(0, 0, 0, 0.87);
+                                                display: table-cell;
+                                                font-size: 14px;
+                                                font-family: "Nunito";
+                                                font-weight: 700;
+                                                line-height: 1;
+                                                letter-spacing: 0.01071em;
+                                                vertical-align: inherit;
+                                                .eem4165{
+                                                    padding: 0;
+                                                    position: relative;
+                                                    color: #4A5568;
+                                                    font-size: 14px;
+                                                    font-family: "Nunito";
+                                                    font-weight: 400;
+                                                    .tagsList{
+                                                        padding-left: 0;
+                                                        margin-bottom: 10px;
+                                                        width: 100%;
+                                                        display: flex;
+                                                        flex-wrap: wrap;
+                                                        box-sizing: border-box;
+                                                        .eem4166 {
+                                                            display: inline-block;
+                                                            align-content: center;
+                                                            width: 100%;
+                                                            box-sizing: border-box;
+                                                            .root{
+                                                                width: 100%;
+                                                                display: flex;
+                                                                flex-wrap: wrap;
+                                                                box-sizing: border-box; 
+                                                                .eem4170{
+                                                                    width: 100%;
+                                                                    .MuiAlert{
+                                                                        margin: 4px 0px;
+                                                                        border-color: #DCDDFF;
+                                                                        background-color: #F3F5FF;
+                                                                        border: 1px solid;
+                                                                        align-items: flex-start;
+                                                                        color: rgb(13, 60, 97);
+                                                                        display: flex;
+                                                                        padding: 6px 16px;
+                                                                        font-size: 12px;
+                                                                        font-family: "Nunito";
+                                                                        font-weight: 700;
+                                                                        line-height: 1;
+                                                                        border-radius: 4px;
+                                                                        letter-spacing: 0.01071em;
+                                                                        box-shadow: none;
+                                                                        transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+                                                                        .MuiAlertIcon{
+                                                                            padding-top: 8px;
+                                                                            display: flex;
+                                                                            opacity: 0.9;
+                                                                            padding: 7px 0;
+                                                                            font-size: 22px;
+                                                                            margin-right: 12px;
+                                                                            color: #2196f3;
+                                                                            .icon{
+                                                                                width: 20px;
+                                                                                height: 20px;
+                                                                                fill: currentColor;
+                                                                                display: inline-block;
+                                                                                font-size: 1.2857142857142856rem;
+                                                                                transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+                                                                                flex-shrink: 0;
+                                                                                user-select: none; 
+                                                                            }
+                                                                        }
+                                                                        @media (min-width: 640px) {
+                                                                            .MuiAlertIcon {
+                                                                                align-items: center;
+                                                                            }
+                                                                        }
+
+                                                                        .MuiAlertMessage{
+                                                                            padding: 8px 0;
+                                                                            .MuiTypography{
+                                                                                color: #2D3748;
+                                                                                font-size: 14px;
+                                                                                font-family: "Mulish";
+                                                                                font-weight: 400;
+                                                                                line-height: 1.5;
+                                                                                letter-spacing: normal;
+                                                                                margin: 0;
+                                                                                .typography{
+
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+
+                                        .eem1260{
+                                            color: inherit;
+                                            border: 1px solid transparent;
+                                            display: table-row;
+                                            outline: 0;
+                                            vertical-align: middle; 
+                                            .paddingNoneEem1260{
+                                                border-bottom: none;
+                                                width: 40px;
+                                                padding: 8px;
+                                                min-width: 48px;
+                                                color: rgba(0, 0, 0, 0.87);
+                                                display: table-cell;
+                                                font-size: 14px;
+                                                text-align: left;
+                                                font-family: "Nunito";
+                                                font-weight: 700;
+                                                line-height: 1;
+                                                letter-spacing: 0.01071em;
+                                                vertical-align: inherit;
+                                            }
+                                            .alignLeftEem1260{
+                                                overflow-wrap: normal;
+                                                border-top: none;
+                                                border-bottom: none;
+                                                padding: 8px;
+                                                text-align: left;
+                                                color: rgba(0, 0, 0, 0.87);
+                                                display: table-cell;
+                                                font-size: 14px;
+                                                font-family: "Nunito";
+                                                font-weight: 700;
+                                                line-height: 1;
+                                                letter-spacing: 0.01071em;
+                                                vertical-align: inherit;
+                                                #row1 {
+                                                    padding: 0;
+                                                    position: relative;
+                                                    color: #4A5568;
+                                                    font-size: 14px;
+                                                    font-family: "Nunito";
+                                                    font-weight: 400;
+                                                    .eem1285{
+                                                        .template{
+                                                            width: 100%;
+                                                            display: flex;
+                                                            flex-flow: column;
+                                                            color: inherit;
+                                                            border: 0;
+                                                            cursor: pointer;
+                                                            margin: 0;
+                                                            outline: 0;
+                                                            padding: 0;
+                                                            position: relative;
+                                                            align-items: center;
+                                                            user-select: none;
+                                                            border-radius: 0;
+                                                            vertical-align: middle;
+                                                            -moz-appearance: none;
+                                                            justify-content: center;
+                                                            text-decoration: none;
+                                                            background-color: transparent;
+                                                            -webkit-appearance: none;
+                                                            -webkit-tap-highlight-color: transparent;
+                                                            .eem1281{
+                                                                top: 0px;
+                                                                width: 100%;
+                                                                height: 157px;
+                                                                position: absolute;
+                                                            }
+
+                                                            .imageWrapper{
+                                                                width: 100%;
+                                                                border: solid 1px #e2e8f0;
+                                                                height: 157px;
+                                                                overflow: hidden;
+                                                                box-sizing: border-box;
+                                                                border-radius: 4px 4px 0px 0px; 
+                                                                .lazyloadWrapper{
+
+                                                                }
+                                                            }
+                                                            .eem1283{
+                                                                width: 100%;
+                                                                border: solid 1px #e2e8f0;
+                                                                padding: 12px 40px 12px 12px;
+                                                                background: #ffffff;
+                                                                box-sizing: border-box;
+                                                                text-align: left;
+                                                                border-radius: 0 0 4px 4px;
+                                                                pointer-events: none;
+                                                                .MuiTypographyh4{
+                                                                    overflow: hidden;
+                                                                    max-width: 63vw;
+                                                                    line-height: 1.43;
+                                                                    white-space: nowrap;
+                                                                    text-overflow: ellipsis;
+                                                                    pointer-events: none;  
+                                                                    color: #32325C;
+                                                                    font-size: 14px;
+                                                                    font-family: "Nunito";
+                                                                    font-weight: 600;
+                                                                    letter-spacing: 0em;
+                                                                    margin: 0;
+                                                                    .MuiGridcontainer{
+                                                                        margin-top: 12px;
+                                                                        width: 100%;
+                                                                        display: flex;
+                                                                        flex-wrap: wrap;
+                                                                        box-sizing: border-box;
+                                                                        .caption{
+                                                                            color: #4A5568;
+                                                                            font-size: 14px;
+                                                                            font-family: "Nunito";
+                                                                            font-weight: 400;
+                                                                            line-height: 1.43;
+                                                                            letter-spacing: normal;
+                                                                            margin: 0;
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+
+                                                        .eem1292{
+                                                            right: 6px;
+                                                            position: absolute;
+                                                            transform: rotate(90deg);
+                                                            bottom: 22px;
+                                                            margin-top: 0 !important;
+
+                                                            .popoverWrapper{
+                                                                max-width: 100%;
+                                                                .customWrapperPopover{
+                                                                    display: inline-flex;
+
+                                                                    .textSecondaryButon{
+                                                                        min-width: 30px;
+                                                                        width: 100%;
+                                                                        color: #5457FF;
+                                                                        border: none;
+                                                                        padding: 0;
+                                                                        font-size: 14px;
+                                                                        background: transparent;
+                                                                        box-shadow: none;
+                                                                        box-sizing: border-box;
+                                                                        font-family: "Mulish";
+                                                                        line-height: 20px;
+                                                                        text-transform: none;
+                                                                        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+                                                                        font-weight: 500;
+                                                                        white-space: nowrap;
+                                                                        border-radius: 4px;
+                                                                        letter-spacing: 0px;
+                                                                        cursor: pointer;
+                                                                        margin: 0;
+                                                                        display: inline-flex;
+                                                                        outline: 0;
+                                                                        position: relative;
+                                                                        align-items: center;
+                                                                        user-select: none;
+                                                                        vertical-align: middle;
+                                                                        -moz-appearance: none;
+                                                                        justify-content: center;
+                                                                        text-decoration: none;
+                                                                        -webkit-appearance: none;
+                                                                        -webkit-tap-highlight-color: transparent;
+                                                                        .labelMiu{
+                                                                            width: 100%;
+                                                                            display: inherit;
+                                                                            align-items: inherit;
+                                                                            justify-content: inherit;
+                                                                            .iconSizeMedium{
+                                                                                width: 28px;
+                                                                                cursor: pointer;
+                                                                                height: 28px;
+                                                                                display: inherit;
+                                                                                align-items: center;
+                                                                                border-radius: 50%;
+                                                                                justify-content: center;
+                                                                                -webkit-box-pack: center;
+                                                                                -webkit-box-align: center;
+                                                                                margin-right: 0px;
+                                                                                margin-left: -4px;
+                                                                                .iconWrapperDots{
+                                                                                    font-size: 20px;
+                                                                                    display: flex;
+                                                                                    -webkit-box-pack: center;
+                                                                                    justify-content: center;
+                                                                                    .hoverBorderDots{
+                                                                                        width: 28px;
+                                                                                        height: 28px;
+                                                                                        display: flex;
+                                                                                        -webkit-box-pack: center;
+                                                                                        justify-content: center;
+                                                                                        -webkit-box-align: center;
+                                                                                        align-items: center;
+                                                                   
+                                                                                        &:hover {
+                                                                                            border-radius: 50%;
+                                                                                            background: rgb(243, 245, 255);
+                                                                                        }
+                                                                                  
+                                                                                    }
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+
+                                                                    .popperContent{
+                                                                        .popperButton{
+                                                                            max-width: 100%;
+                                                                            padding: 12px 16px 16px;
+                                                                            color: rgb(74, 85, 104);
+                                                                            font-family: "Mulish";
+                                                                            font-size: 14px;
+                                                                            font-weight: 400;
+                                                                            text-align: left;
+                                                                            line-height: 20px;
+                                                                            cursor: pointer;
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
