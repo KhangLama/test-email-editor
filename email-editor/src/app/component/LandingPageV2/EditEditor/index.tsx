@@ -203,7 +203,7 @@ const EditorHTML: React.FC = () => {
           editorId="editor_container"
           ref={emailEditorRef}
           minHeight={1000}
-          projectId={1071}
+          projectId={237985}
           tools={{
             "custom#product_tool": {
               data: {
