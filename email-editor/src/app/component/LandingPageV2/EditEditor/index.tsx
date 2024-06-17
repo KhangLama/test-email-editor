@@ -203,23 +203,6 @@ const EditorHTML: React.FC = () => {
           editorId="editor_container"
           ref={emailEditorRef}
           minHeight={1000}
-          projectId={237985}
-          tools={{
-            "custom#product_tool": {
-              data: {
-                products,
-              },
-              properties: {
-                productLibrary: {
-                  editor: {
-                    data: {
-                      products,
-                    },
-                  },
-                },
-              },
-            },
-          }}
           options={{
             customJS: ['https://teknix-mail.teknix.dev/custom2.js'],
             customCSS: [
@@ -228,6 +211,20 @@ const EditorHTML: React.FC = () => {
             appearance: {
               theme: 'modern_light',
             },
+            projectId: 237985,
+            tools: {
+              "custom#product_tool": {
+                properties: {
+                  productLibrary: {
+                    editor: {
+                      data: {
+                        products,
+                      },
+                    },
+                  },
+                },
+              },
+            }
           }}
         />
       </div>
