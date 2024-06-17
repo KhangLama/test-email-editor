@@ -204,7 +204,12 @@ const EditorHTML: React.FC = () => {
           ref={emailEditorRef}
           minHeight={1000}
           options={{
-            customJS: ['https://teknix-mail.teknix.dev/custom2.js'],
+            customJS: [
+              window.location.protocol +
+                "//" +
+                window.location.host +
+                "/custom.js"
+            ],
             customCSS: [
               'https://examples.unlayer.com/examples/product-library-tool/productTool.css',
             ],
