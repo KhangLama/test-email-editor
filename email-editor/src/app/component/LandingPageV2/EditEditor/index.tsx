@@ -13,6 +13,18 @@ const EditorHTML: React.FC = () => {
   const emailEditorRef = React.useRef<any>(null)
   const [customJSUrl, setCustomJSUrl] = useState('');
 
+  const [preview, setPreview] = React.useState(false)
+  const [template, setTemplate] = React.useState<any>(null)
+  const [exportedHtml, setExportedHtml] = React.useState('')
+  const router = useRouter()
+  const [isEditing, setIsEditing] = React.useState(false)
+  const [templateName, setTemplateName] = React.useState('')
+  const [status, setStatus] = React.useState('')
+  const [isSaving, setIsSaving] = React.useState(false)
+  const collectionId = React.useRef('')
+  const getIdImageRef = React.useRef('')
+  const [forms, setForms] = useState([])
+
   // const exportHtmlAndSave = async () => {
   //   setStatus('Saving')
   //   setIsSaving(true)
@@ -142,7 +154,7 @@ const EditorHTML: React.FC = () => {
       image:
         'https://img.thriftbooks.com/api/images/i/m/F0836F0E91E904515A5A47078C555303CCC67351.jpg',
       title: 'The Hundred-Year House',
-      description: `    
+      description:`    
       <form style="max-width: 24rem; margin: 0 auto; border: 1px solid #ccc; margin-top: 0.25rem; border-radius: 0.375rem; background-color: #E0E7FF;">
       <div style="padding: 0.75rem;">
         <div style="font-size: 1.125rem; font-weight: 600;">
@@ -183,17 +195,7 @@ const EditorHTML: React.FC = () => {
 
   let data1 = []
 
-  useEffect(() => {
-   
-    const currentDomain = window.location.origin;
-    
-    const customJSPath = `${currentDomain}/js/custom.js`;
-    setCustomJSUrl(customJSPath);
-  }, []);
 
-  if (!customJSUrl) {
-    return null; 
-  }
   return (
     <div className={classes.templateEditor}>
 
@@ -203,6 +205,7 @@ const EditorHTML: React.FC = () => {
           editorId="editor_container"
           ref={emailEditorRef}
           minHeight={1000}
+          
           options={{
             customJS: [customJSUrl],
             customCSS: [
@@ -213,7 +216,7 @@ const EditorHTML: React.FC = () => {
             },
             projectId: 237998,
             tools: {
-              "custom#product_tool": {
+              "custom#product": {
                 enabled: true,
                 properties: {
                   productLibrary: {
