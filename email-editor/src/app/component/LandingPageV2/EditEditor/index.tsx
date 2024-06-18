@@ -216,7 +216,53 @@ const EditorHTML: React.FC = () => {
             id: 'editor',
             projectId: 238097,
             tools: {
-              
+              "custom#my_tool":{
+                name: 'menu_tool',
+  label: 'My Menu',
+  icon: 'fa-bars',
+  supportedDisplayModes: ['web', 'email'],
+  options: {
+    default: {
+      title: null,
+    },
+    menu: {
+      title: 'Menu Items',
+      position: 1,
+      options: {
+        menu: {
+          label: 'Menu Items',
+          defaultValue: {
+            items: [],
+          },
+          widget: 'menu_editor', // Custom Property Editor
+        },
+      },
+    },
+  },
+  values: {},
+  renderer: {
+    Viewer: unlayer.createViewer({
+      render(values) {
+        // If the user has added no items yet, show empty placeholder template
+        if (values.menu.items.length == 0) return emptyTemplate();
+
+        return menuTemplate({ items: values.menu.items });
+      },
+    }),
+    exporters: {
+      web: function (values) {
+        return menuTemplate({ items: values.menu.items });
+      },
+      email: function (values) {
+        return menuTemplate({ items: values.menu.items });
+      },
+    },
+    head: {
+      css: function (values) {},
+      js: function (values) {},
+    },
+  },
+              }
               
             }
           }}
