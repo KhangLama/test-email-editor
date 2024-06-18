@@ -206,7 +206,7 @@ const EditorHTML: React.FC = () => {
           minHeight={1000}
           
           options={{
-            customJS: ['https://test-email-editor.vercel.app/custom.jsx'],
+            // customJS: ['https://test-email-editor.vercel.app/custom.jsx'],
             customCSS: [
               'https://examples.unlayer.com/examples/product-library-tool/productTool.css',
             ],
