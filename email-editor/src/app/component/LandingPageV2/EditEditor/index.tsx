@@ -202,7 +202,6 @@ const EditorHTML: React.FC = () => {
 
       <div>
         <EmailEditor
-          editorId="editor_container"
           ref={emailEditorRef}
           minHeight={1000}
           
@@ -214,7 +213,8 @@ const EditorHTML: React.FC = () => {
             appearance: {
               theme: 'modern_light',
             },
-            projectId: 237998,
+            id: 'editor',
+            projectId: 238097,
             tools: {
               "custom#product": {
                 enabled: true,
