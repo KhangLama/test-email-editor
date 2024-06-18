@@ -206,7 +206,7 @@ const EditorHTML: React.FC = () => {
           minHeight={1000}
           
           options={{
-            customJS: [customJSUrl],
+            customJS: ['https://test-email-editor.vercel.app/custom.jsx'],
             customCSS: [
               'https://examples.unlayer.com/examples/product-library-tool/productTool.css',
             ],
@@ -216,18 +216,8 @@ const EditorHTML: React.FC = () => {
             id: 'editor',
             projectId: 238097,
             tools: {
-              "custom#product": {
-                enabled: true,
-                properties: {
-                  productLibrary: {
-                    editor: {
-                      data: {
-                        products,
-                      },
-                    },
-                  },
-                },
-              },
+              
+              
             }
           }}
         />
